@@ -14,7 +14,7 @@ class Student:
         return False
 
 student_1 = Student("Rachel", "Richardson")
-day_off = Student.snow_day(7)
+day_off = Student.snow_day(32)
 if(day_off == True):
     print("We have the day off!")
 else:
