@@ -14,17 +14,17 @@ class Student:
         print(f"The student {self.first} {self.last} has a GPA of {self.GPA} and costs of ${self.tuition} in tuition and ${self.fees} in fees.") 
 
 class Freshman(Student):
-    pass
-    #If the method below is uncommented, then Python will use it instead of the display_data() method in the Student class when the display_data() method is called from a Freshman object
-    # def display_data(self):
-    #      print(f"The freshman {self.first} {self.last} has a GPA of {self.GPA} and costs of ${self.tuition} in tuition and ${self.fees} in fees.") 
+    # pass
+    # If the method below is uncommented, then Python will use it instead of the display_data() method in the Student class when the display_data() method is called from a Freshman object
+    def display_data(self):
+         print(f"The freshman {self.first} {self.last} has a GPA of {self.GPA} and costs of ${self.tuition} in tuition and ${self.fees} in fees.") 
 
 student_1 = Student("Rachel", "Richardson", 4, 200)
 freshman_1 = Freshman("Bryan", "Betancourt", 3.5, 350) #You can create instances of Freshman sending the data of the __init__() method for the Student, since Freshman does not have its own __init__() method
-student_1.display_data()
-freshman_1.display_data()
+# student_1.display_data()
+# freshman_1.display_data()
 
-#print(help(Freshman)) #This displays useful info about the child class, like the Method Resolution Order
+# print(help(Freshman)) #This displays useful info about the child class, like the Method Resolution Order
 
 Freshman.tuition = 4000
 student_1.display_data()

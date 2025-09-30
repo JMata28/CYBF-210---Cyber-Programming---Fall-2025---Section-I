@@ -51,20 +51,21 @@ class Senior(Student):
 
 #Test the methods of the sub classes
 freshman_1 = Freshman("Bryan", "Betancourt", 3.5, 350, False) 
-freshman_1.orientation_status()
+# freshman_1.orientation_status()
 
 senior_1 = Senior("Phillip", "Pratt", 3.9, 400, ["Dean's List", "Summa Cum Laude"])
-senior_1.display_honors()
+# senior_1.display_honors()
 
-senior_2 = Senior("David", "Dennison", 3.2, 400)
-senior_2.add_honor("Student Athlete")
-senior_2.display_honors()
-senior_2.remove_honor("Dean's List")
+# senior_2 = Senior("David", "Dennison", 3.2, 400)
+# senior_2.add_honor("Student Athlete")
+# senior_2.display_honors()
+# senior_2.remove_honor("Dean's List")
+# senior_2.display_honors()
 
 #isinstance and issubclass
-print(isinstance(freshman_1, Freshman))
-print(isinstance(freshman_1, Student))
-print(isinstance(freshman_1, Senior))
+# print(isinstance(freshman_1, Freshman))
+# print(isinstance(freshman_1, Student))
+# print(isinstance(freshman_1, Senior))
 
 print(issubclass(Freshman, Student))
 print(issubclass(Freshman, Senior))
