@@ -10,7 +10,7 @@ def iterative_factorial(number):
     else:
         return("Enter a positive number for this function to work.")
 
-print(iterative_factorial(-4))
+# print(iterative_factorial(3))
 
 def recursive_factorial(number):
     if (number > 0):
