@@ -7,27 +7,28 @@ stack = []
 stack.append('Oranges')
 stack.append('Apples')
 stack.append('Strawberries')
-print("Stack: ", stack)
+#print("Stack: ", stack)
 
-# # Peek
+# Peek
 # topElement = stack[-1]
 # print("Peek: ", topElement)
 
 # Pop
-poppedElement = stack.pop()
-print("Pop: ", poppedElement)
+# poppedElement = stack.pop()
+# print("Pop: ", poppedElement)
+# print(stack)
 
-# Stack after Pop
-print("Stack after Pop: ", stack)
+# # Stack after Pop
+# print("Stack after Pop: ", stack)
 
 # isEmpty
-isEmpty = not bool(stack)
-print("isEmpty: ", isEmpty)
+# isEmpty = not bool(stack)
+# print("isEmpty: ", isEmpty)
 #Another way to check if the list is empty
-if stack:
-    print("This stack is not empty.")
-else:
-    print("This stack is empty.")
+# if stack:
+#     print("This stack is not empty.")
+# else:
+#     print("This stack is empty.")
 
 # # Size
-# print("Size: ",len(stack))
+print("Size: ",len(stack))
