@@ -74,24 +74,24 @@ def delete_specific_node(head_node, node_to_delete):
 new_head_node = delete_specific_node(head_node, B)
 display(new_head_node)
 
-# #To insert a specific node
-# #Let's assume that the position works as a zero-based index (first position is 0, second position is 1, and so on.)
-# def insert_Node_At_Position(head_node, new_node, position):
-#   if position == 0:
-#     new_node.next_node = head_node
-#     return new_node
+#To insert a specific node
+#Let's assume that the position works as a zero-based index (first position is 0, second position is 1, and so on.)
+def insert_Node_At_Position(head_node, new_node, position):
+  if position == 0:
+    new_node.next_node = head_node
+    return new_node
 
-#   currentNode = head_node
-#   #We loop (position-1) times because we only need to get to the node BEFORE the position where we want to insert. For example: if you want to insert at position 3 (the fourth node), you want to stop at position 2 (the third node). So looping with range (2) will give traverse through nodes of indexes 0 and 1, leaving the current node as the node with index 2. 
-#   for _ in range(position-1): 
-#     if currentNode is None:
-#       break
-#     currentNode = currentNode.next_node
+  currentNode = head_node
+  #We loop (position-1) times because we only need to get to the node BEFORE the position where we want to insert. For example: if you want to insert at position 3 (the fourth node), you want to stop at position 2 (the third node). So looping with range (2) will give traverse through nodes of indexes 0 and 1, leaving the current node as the node with index 2. 
+  for _ in range(position-1): 
+    if currentNode is None:
+      break
+    currentNode = currentNode.next_node
 
-#   new_node.next_node = currentNode.next_node
-#   currentNode.next_node = new_node
-#   return head_node
+  new_node.next_node = currentNode.next_node
+  currentNode.next_node = new_node
+  return head_node
 
-# new_node = SinglyNode("shovel")
-# new_head_node = insert_Node_At_Position(new_head_node, new_node, 3)
-# display(new_head_node)
+new_node = SinglyNode("shovel")
+new_head_node = insert_Node_At_Position(new_head_node, new_node, 1)
+display(new_head_node)
