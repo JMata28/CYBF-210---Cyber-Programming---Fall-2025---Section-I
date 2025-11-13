@@ -31,7 +31,7 @@ nodeF.left = nodeG
 
 #Pre-Order Traversal of this binary tree
 def preOrderTraversal(node):
-  if node is None:
+  if node is None: #base case
     return
   #the keyword end is used to tell print the print function what to print INSTEAD of starting a newline character, like it usually would.
   print(node.data, end=", ") 
@@ -54,7 +54,7 @@ print("In-order traversal DFS: ")
 inOrderTraversal(root)
 print("\n\n")
 
-#In-Order Traversal of this binary tree
+#Post-Order Traversal of this binary tree
 def postOrderTraversal(node):
   if node is None:
     return
