@@ -41,7 +41,7 @@ print("Heap after replacement: ", li)
 # Merging Heaps
 h2 = [2, 4, 6, 8]
 # Merging the lists
-h3 = list(heapq.merge(li, h2))
+h3 = list(heapq.merge(li, h2)) #notice how the output of heapq.merge is then made into a list
 print("Merged heap:", h3)
 
 
